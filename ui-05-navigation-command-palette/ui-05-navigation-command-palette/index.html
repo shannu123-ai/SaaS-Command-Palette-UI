@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SaaS Navigation Command Palette</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <aside class="sidebar">
+        <div class="logo">
+            <span class="logo-icon">✦</span>
+            <span>FlowDesk</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">Dashboard</a>
+            <a href="#">Projects</a>
+            <a href="#">Tasks</a>
+            <a href="#">Analytics</a>
+            <a href="#">Team</a>
+            <a href="#">Settings</a>
+        </nav>
+
+        <div class="profile">
+            <div class="avatar">P</div>
+            <div>
+                <strong>Priyanka</strong>
+                <small>Team Member</small>
+            </div>
+        </div>
+    </aside>
+
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">Workspace</p>
+                <h1>Good morning, Priyanka 👋</h1>
+                <p class="subtitle">Manage your workspace quickly with the command palette.</p>
+            </div>
+
+            <button class="command-btn" id="openPalette">
+                Search commands
+                <kbd>Ctrl K</kbd>
+            </button>
+        </header>
+
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon purple">⌘</span>
+                <div>
+                    <p>Quick Actions</p>
+                    <h2>12</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon blue">↗</span>
+                <div>
+                    <p>Navigation Items</p>
+                    <h2>08</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon pink">⚡</span>
+                <div>
+                    <p>Commands Used</p>
+                    <h2>126</h2>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon green">✓</span>
+                <div>
+                    <p>Efficiency</p>
+                    <h2>94%</h2>
+                </div>
+            </div>
+
+        </section>
+
+        <section class="dashboard-grid">
+
+            <div class="panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">Navigation</p>
+                        <h2>Quick Access</h2>
+                    </div>
+                    <span class="badge">Command Palette</span>
+                </div>
+
+                <div class="quick-grid">
+                    <button class="quick-card" data-command="Dashboard">
+                        <span>⌂</span>
+                        <strong>Dashboard</strong>
+                        <small>Overview & activity</small>
+                    </button>
+
+                    <button class="quick-card" data-command="Projects">
+                        <span>◈</span>
+                        <strong>Projects</strong>
+                        <small>Manage your projects</small>
+                    </button>
+
+                    <button class="quick-card" data-command="Tasks">
+                        <span>✓</span>
+                        <strong>Tasks</strong>
+                        <small>Track your work</small>
+                    </button>
+
+                    <button class="quick-card" data-command="Analytics">
+                        <span>◒</span>
+                        <strong>Analytics</strong>
+                        <small>View insights</small>
+                    </button>
+                </div>
+            </div>
+
+            <div class="panel activity-panel">
+                <div class="panel-header">
+                    <div>
+                        <p class="eyebrow">Recent</p>
+                        <h2>Activity</h2>
+                    </div>
+                </div>
+
+                <div class="activity">
+                    <div class="activity-item">
+                        <span class="dot purple-dot"></span>
+                        <div>
+                            <strong>Command palette opened</strong>
+                            <small>Just now</small>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="dot blue-dot"></span>
+                        <div>
+                            <strong>Project navigation completed</strong>
+                            <small>5 minutes ago</small>
+                        </div>
+                    </div>
+
+                    <div class="activity-item">
+                        <span class="dot green-dot"></span>
+                        <div>
+                            <strong>Workspace updated</strong>
+                            <small>18 minutes ago</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Command Palette -->
+    <div class="overlay" id="paletteOverlay">
+
+        <div class="command-palette" id="commandPalette">
+
+            <div class="search-box">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="commandSearch"
+                    placeholder="Search commands..."
+                    autocomplete="off"
+                >
+                <kbd>ESC</kbd>
+            </div>
+
+            <div class="commands" id="commands">
+
+                <p class="command-title">Quick Actions</p>
+
+                <button class="command-item" data-command="Create new project">
+                    <span class="command-icon purple-bg">＋</span>
+                    <div>
+                        <strong>Create new project</strong>
+                        <small>Start a new project</small>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <button class="command-item" data-command="Create new task">
+                    <span class="command-icon blue-bg">✓</span>
+                    <div>
+                        <strong>Create new task</strong>
+                        <small>Add a task to your workspace</small>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <p class="command-title">Navigation</p>
+
+                <button class="command-item" data-command="Dashboard">
+                    <span class="command-icon">⌂</span>
+                    <div>
+                        <strong>Dashboard</strong>
+                        <small>Go to dashboard</small>
+                    </div>
+                    <kbd>⌘1</kbd>
+                </button>
+
+                <button class="command-item" data-command="Projects">
+                    <span class="command-icon">◈</span>
+                    <div>
+                        <strong>Projects</strong>
+                        <small>View all projects</small>
+                    </div>
+                    <kbd>⌘2</kbd>
+                </button>
+
+                <button class="command-item" data-command="Tasks">
+                    <span class="command-icon">✓</span>
+                    <div>
+                        <strong>Tasks</strong>
+                        <small>View your tasks</small>
+                    </div>
+                    <kbd>⌘3</kbd>
+                </button>
+
+                <button class="command-item" data-command="Analytics">
+                    <span class="command-icon">◒</span>
+                    <div>
+                        <strong>Analytics</strong>
+                        <small>View workspace analytics</small>
+                    </div>
+                    <kbd>⌘4</kbd>
+                </button>
+
+                <p class="command-title">Settings</p>
+
+                <button class="command-item" data-command="Settings">
+                    <span class="command-icon">⚙</span>
+                    <div>
+                        <strong>Settings</strong>
+                        <small>Manage workspace settings</small>
+                    </div>
+                    <kbd>⌘,</kbd>
+                </button>
+
+            </div>
+
+            <div class="palette-footer">
+                <span>↑↓ Navigate</span>
+                <span>↵ Select</span>
+                <span>ESC Close</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
