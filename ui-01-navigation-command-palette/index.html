@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>SaaS Command Palette</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <span>FlowDesk</span>
+        </div>
+
+        <nav>
+            <a href="#" class="nav-item active">
+                <span>⌂</span>
+                Dashboard
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>▣</span>
+                Projects
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>✓</span>
+                Tasks
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>◉</span>
+                Analytics
+            </a>
+
+            <a href="#" class="nav-item">
+                <span>♙</span>
+                Team
+            </a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <a href="#" class="nav-item">
+                <span>⚙</span>
+                Settings
+            </a>
+
+            <div class="profile">
+                <div class="avatar">S</div>
+                <div>
+                    <strong>Shannu</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <header class="topbar">
+            <div>
+                <p class="welcome">Welcome back 👋</p>
+                <h1>Dashboard</h1>
+            </div>
+
+            <button class="command-button" id="openPalette">
+                <span>⌘</span>
+                Search commands
+                <kbd>Ctrl K</kbd>
+            </button>
+        </header>
+
+
+        <!-- Dashboard Cards -->
+        <section class="dashboard-grid">
+
+            <div class="stat-card">
+                <span class="stat-icon">▣</span>
+                <p>Active Projects</p>
+                <h2>24</h2>
+                <small>↑ 12% this month</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">✓</span>
+                <p>Completed Tasks</p>
+                <h2>186</h2>
+                <small>↑ 8% this week</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">♙</span>
+                <p>Team Members</p>
+                <h2>18</h2>
+                <small>3 new members</small>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">◈</span>
+                <p>Productivity</p>
+                <h2>92%</h2>
+                <small>↑ 5% this month</small>
+            </div>
+
+        </section>
+
+
+        <!-- Recent Activity -->
+        <section class="content-card">
+
+            <div class="section-header">
+                <div>
+                    <h2>Recent Activity</h2>
+                    <p>Latest updates from your workspace</p>
+                </div>
+
+                <button class="view-button">View all</button>
+            </div>
+
+            <div class="activity-list">
+
+                <div class="activity">
+                    <div class="activity-icon">✓</div>
+                    <div>
+                        <strong>Project completed</strong>
+                        <p>Website redesign has been completed.</p>
+                    </div>
+                    <span>2 min ago</span>
+                </div>
+
+                <div class="activity">
+                    <div class="activity-icon">+</div>
+                    <div>
+                        <strong>New team member</strong>
+                        <p>Alex joined the Design team.</p>
+                    </div>
+                    <span>15 min ago</span>
+                </div>
+
+                <div class="activity">
+                    <div class="activity-icon">▣</div>
+                    <div>
+                        <strong>New project created</strong>
+                        <p>Mobile App Development was created.</p>
+                    </div>
+                    <span>1 hour ago</span>
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Command Palette Overlay -->
+    <div class="palette-overlay" id="paletteOverlay">
+
+        <div class="command-palette" id="commandPalette">
+
+            <div class="search-area">
+                <span class="search-icon">⌕</span>
+
+                <input
+                    type="text"
+                    id="commandSearch"
+                    placeholder="Search commands..."
+                    autocomplete="off"
+                />
+
+                <kbd>ESC</kbd>
+            </div>
+
+
+            <div class="command-list" id="commandList">
+
+                <!-- Quick Actions -->
+                <div class="command-section">
+                    <p class="section-title">QUICK ACTIONS</p>
+
+                    <button class="command-item">
+                        <span class="command-icon">＋</span>
+
+                        <span class="command-info">
+                            <strong>Create new project</strong>
+                            <small>Start a new project</small>
+                        </span>
+
+                        <kbd>N</kbd>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">✓</span>
+
+                        <span class="command-info">
+                            <strong>Create new task</strong>
+                            <small>Add a task to your workspace</small>
+                        </span>
+
+                        <kbd>T</kbd>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">♙</span>
+
+                        <span class="command-info">
+                            <strong>Invite team member</strong>
+                            <small>Add someone to your team</small>
+                        </span>
+
+                        <kbd>I</kbd>
+                    </button>
+                </div>
+
+
+                <!-- Navigation -->
+                <div class="command-section">
+                    <p class="section-title">NAVIGATION</p>
+
+                    <button class="command-item">
+                        <span class="command-icon">⌂</span>
+
+                        <span class="command-info">
+                            <strong>Dashboard</strong>
+                            <small>Go to your dashboard</small>
+                        </span>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">▣</span>
+
+                        <span class="command-info">
+                            <strong>Projects</strong>
+                            <small>View all projects</small>
+                        </span>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">◉</span>
+
+                        <span class="command-info">
+                            <strong>Analytics</strong>
+                            <small>View workspace analytics</small>
+                        </span>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">♙</span>
+
+                        <span class="command-info">
+                            <strong>Team</strong>
+                            <small>Manage your team</small>
+                        </span>
+                    </button>
+                </div>
+
+
+                <!-- Settings -->
+                <div class="command-section">
+                    <p class="section-title">SETTINGS</p>
+
+                    <button class="command-item">
+                        <span class="command-icon">⚙</span>
+
+                        <span class="command-info">
+                            <strong>Settings</strong>
+                            <small>Manage your workspace</small>
+                        </span>
+                    </button>
+
+                    <button class="command-item">
+                        <span class="command-icon">☾</span>
+
+                        <span class="command-info">
+                            <strong>Toggle dark mode</strong>
+                            <small>Change appearance</small>
+                        </span>
+
+                        <kbd>D</kbd>
+                    </button>
+                </div>
+
+            </div>
+
+
+            <!-- Palette Footer -->
+            <div class="palette-footer">
+                <span>↑↓ Navigate</span>
+                <span>↵ Select</span>
+                <span>ESC Close</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
