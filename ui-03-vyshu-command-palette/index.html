@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlowDesk AI Command Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="app">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">
+                <div class="logo-icon">F</div>
+                <span>FlowDesk</span>
+            </div>
+
+            <nav>
+                <a href="#" class="active">⌘ AI Command</a>
+                <a href="#">▣ Projects</a>
+                <a href="#">✓ Tasks</a>
+                <a href="#">◉ Analytics</a>
+                <a href="#">♧ Team</a>
+            </nav>
+
+            <div class="sidebar-bottom">
+                <a href="#">⚙ Settings</a>
+
+                <div class="profile">
+                    <div class="avatar">V</div>
+                    <div>
+                        <strong>Vyshu</strong>
+                        <small>Designer</small>
+                    </div>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main">
+
+            <header class="topbar">
+                <div>
+                    <p class="eyebrow">AI WORKSPACE</p>
+                    <h1>Good morning, Vyshu 👋</h1>
+                    <p class="subtitle">
+                        Ask your workspace anything or run an action instantly.
+                    </p>
+                </div>
+
+                <button class="command-button" id="openCommand">
+                    <span>⌘</span>
+                    Command Center
+                    <kbd>Ctrl K</kbd>
+                </button>
+            </header>
+
+            <!-- AI Hero -->
+            <section class="hero-card">
+                <div class="hero-content">
+                    <div class="ai-badge">✦ AI POWERED</div>
+
+                    <h2>
+                        What do you want
+                        <span>to accomplish?</span>
+                    </h2>
+
+                    <p>
+                        Search projects, create tasks, analyze your workspace,
+                        or ask AI for help.
+                    </p>
+
+                    <button class="hero-search" id="heroSearch">
+                        <span>⌕</span>
+                        <span class="search-text">Try "Create a new project..."</span>
+                        <kbd>⌘ K</kbd>
+                    </button>
+                </div>
+
+                <div class="orb">
+                    <div class="orb-inner">✦</div>
+                </div>
+            </section>
+
+            <!-- Quick Actions -->
+            <section class="section">
+                <div class="section-title">
+                    <div>
+                        <h3>Quick Actions</h3>
+                        <p>Frequently used commands</p>
+                    </div>
+                </div>
+
+                <div class="action-grid">
+
+                    <button class="action-card">
+                        <div class="action-icon purple">＋</div>
+                        <div>
+                            <strong>Create Project</strong>
+                            <span>Start something new</span>
+                        </div>
+                    </button>
+
+                    <button class="action-card">
+                        <div class="action-icon blue">✓</div>
+                        <div>
+                            <strong>Create Task</strong>
+                            <span>Add a new task</span>
+                        </div>
+                    </button>
+
+                    <button class="action-card">
+                        <div class="action-icon pink">✦</div>
+                        <div>
+                            <strong>Ask AI</strong>
+                            <span>Get workspace insights</span>
+                        </div>
+                    </button>
+
+                    <button class="action-card">
+                        <div class="action-icon green">⌁</div>
+                        <div>
+                            <strong>View Analytics</strong>
+                            <span>Check performance</span>
+                        </div>
+                    </button>
+
+                </div>
+            </section>
+
+            <!-- Workspace Overview -->
+            <section class="section">
+                <div class="section-title">
+                    <div>
+                        <h3>Workspace Overview</h3>
+                        <p>Your current workspace activity</p>
+                    </div>
+
+                    <button class="view-button">View all →</button>
+                </div>
+
+                <div class="stats">
+
+                    <div class="stat-card">
+                        <span>ACTIVE PROJECTS</span>
+                        <strong>12</strong>
+                        <small class="positive">↑ 18% this month</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>OPEN TASKS</span>
+                        <strong>48</strong>
+                        <small class="positive">↑ 8% this week</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>TEAM MEMBERS</span>
+                        <strong>24</strong>
+                        <small>Across 6 teams</small>
+                    </div>
+
+                    <div class="stat-card">
+                        <span>AI COMMANDS</span>
+                        <strong>156</strong>
+                        <small class="positive">↑ 32% this month</small>
+                    </div>
+
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <!-- Command Palette -->
+    <div class="overlay" id="overlay">
+
+        <div class="command-modal" id="commandModal">
+
+            <div class="command-search">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="commandInput"
+                    placeholder="Search commands or ask AI..."
+                    autocomplete="off"
+                />
+                <kbd>ESC</kbd>
+            </div>
+
+            <div class="command-body">
+
+                <p class="command-label">AI COMMANDS</p>
+
+                <button class="command-item">
+                    <div class="command-icon purple">✦</div>
+                    <div>
+                        <strong>Ask AI Assistant</strong>
+                        <span>Ask anything about your workspace</span>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <button class="command-item">
+                    <div class="command-icon blue">＋</div>
+                    <div>
+                        <strong>Create new project</strong>
+                        <span>Start a new workspace project</span>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <button class="command-item">
+                    <div class="command-icon pink">✓</div>
+                    <div>
+                        <strong>Create a task</strong>
+                        <span>Add a task to your workspace</span>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <p class="command-label">NAVIGATION</p>
+
+                <button class="command-item">
+                    <div class="command-icon green">▣</div>
+                    <div>
+                        <strong>Open Projects</strong>
+                        <span>Browse all projects</span>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+                <button class="command-item">
+                    <div class="command-icon blue">◉</div>
+                    <div>
+                        <strong>Open Analytics</strong>
+                        <span>View workspace performance</span>
+                    </div>
+                    <kbd>↵</kbd>
+                </button>
+
+            </div>
+
+            <div class="command-footer">
+                <span>↑↓ Navigate</span>
+                <span>↵ Select</span>
+                <span>ESC Close</span>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="toast" id="toast">
+        ✦ Command executed successfully
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
