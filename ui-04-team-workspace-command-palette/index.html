@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Team Workspace</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+        <div class="logo">
+            <div class="logo-icon">S</div>
+            <span>SyncSpace</span>
+        </div>
+
+        <nav>
+            <a href="#" class="active">⌂ Dashboard</a>
+            <a href="#">◈ Workspace</a>
+            <a href="#">♙ Team</a>
+            <a href="#">▣ Projects</a>
+            <a href="#">⚙ Settings</a>
+        </nav>
+
+        <div class="sidebar-bottom">
+            <div class="user">
+                <div class="avatar">G</div>
+                <div>
+                    <strong>Geethika</strong>
+                    <small>Admin</small>
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main">
+
+        <header class="topbar">
+            <div>
+                <p class="eyebrow">TEAM WORKSPACE</p>
+                <h1>Good morning, Geethika 👋</h1>
+                <p class="subtitle">
+                    Manage your team and workspaces from one place.
+                </p>
+            </div>
+
+            <button class="command-button" id="openPalette">
+                <span>⌘</span>
+                Search commands
+                <kbd>Ctrl K</kbd>
+            </button>
+        </header>
+
+        <!-- Workspace Card -->
+        <section class="workspace-card">
+            <div class="workspace-info">
+                <div class="workspace-icon">W</div>
+
+                <div>
+                    <p class="label">CURRENT WORKSPACE</p>
+                    <h2>Design Team</h2>
+                    <p>12 members · 8 active projects</p>
+                </div>
+            </div>
+
+            <button class="secondary-btn" id="switchWorkspace">
+                Switch Workspace
+            </button>
+        </section>
+
+        <!-- Stats -->
+        <section class="stats">
+
+            <div class="stat-card">
+                <span class="stat-icon">♙</span>
+                <div>
+                    <p>Team Members</p>
+                    <h3>12</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">▣</span>
+                <div>
+                    <p>Active Projects</p>
+                    <h3>8</h3>
+                </div>
+            </div>
+
+            <div class="stat-card">
+                <span class="stat-icon">✓</span>
+                <div>
+                    <p>Tasks Completed</p>
+                    <h3>86%</h3>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+
+            <div class="section-heading">
+                <div>
+                    <h2>Team Members</h2>
+                    <p>People working in this workspace</p>
+                </div>
+
+                <button class="primary-btn" id="inviteBtn">
+                    + Invite Member
+                </button>
+            </div>
+
+            <div class="members">
+
+                <div class="member-card">
+                    <div class="avatar purple">A</div>
+                    <div>
+                        <strong>Alex Morgan</strong>
+                        <span>Product Designer</span>
+                    </div>
+                    <span class="status">Active</span>
+                </div>
+
+                <div class="member-card">
+                    <div class="avatar blue">R</div>
+                    <div>
+                        <strong>Ryan Lee</strong>
+                        <span>Frontend Developer</span>
+                    </div>
+                    <span class="status">Active</span>
+                </div>
+
+                <div class="member-card">
+                    <div class="avatar green">M</div>
+                    <div>
+                        <strong>Maya Patel</strong>
+                        <span>Project Manager</span>
+                    </div>
+                    <span class="status">Active</span>
+                </div>
+
+                <div class="member-card">
+                    <div class="avatar pink">J</div>
+                    <div>
+                        <strong>Jordan Kim</strong>
+                        <span>UX Researcher</span>
+                    </div>
+                    <span class="status">Away</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- Quick Actions -->
+        <section class="quick-section">
+            <div class="section-heading">
+                <div>
+                    <h2>Quick Actions</h2>
+                    <p>Common workspace actions</p>
+                </div>
+            </div>
+
+            <div class="quick-actions">
+
+                <button class="action-card" data-command="Invite Member">
+                    <span>＋</span>
+                    <div>
+                        <strong>Invite Member</strong>
+                        <small>Add someone to your team</small>
+                    </div>
+                </button>
+
+                <button class="action-card" data-command="Create Workspace">
+                    <span>✦</span>
+                    <div>
+                        <strong>Create Workspace</strong>
+                        <small>Start a new workspace</small>
+                    </div>
+                </button>
+
+                <button class="action-card" data-command="Team Settings">
+                    <span>⚙</span>
+                    <div>
+                        <strong>Team Settings</strong>
+                        <small>Manage team preferences</small>
+                    </div>
+                </button>
+
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Command Palette -->
+    <div class="overlay" id="overlay">
+
+        <div class="command-palette">
+
+            <div class="palette-header">
+                <span>⌕</span>
+                <input
+                    type="text"
+                    id="commandSearch"
+                    placeholder="Search commands..."
+                    autocomplete="off"
+                >
+                <kbd>ESC</kbd>
+            </div>
+
+            <div class="commands" id="commands">
+
+                <button class="command-item" data-command="Invite Member">
+                    <span>＋</span>
+                    <div>
+                        <strong>Invite Member</strong>
+                        <small>Add a new team member</small>
+                    </div>
+                </button>
+
+                <button class="command-item" data-command="Switch Workspace">
+                    <span>⇄</span>
+                    <div>
+                        <strong>Switch Workspace</strong>
+                        <small>Change your current workspace</small>
+                    </div>
+                </button>
+
+                <button class="command-item" data-command="Create Workspace">
+                    <span>✦</span>
+                    <div>
+                        <strong>Create Workspace</strong>
+                        <small>Create a new workspace</small>
+                    </div>
+                </button>
+
+                <button class="command-item" data-command="Team Settings">
+                    <span>⚙</span>
+                    <div>
+                        <strong>Team Settings</strong>
+                        <small>Manage team settings</small>
+                    </div>
+                </button>
+
+                <button class="command-item" data-command="View Team">
+                    <span>♙</span>
+                    <div>
+                        <strong>View Team</strong>
+                        <small>See all team members</small>
+                    </div>
+                </button>
+
+            </div>
+
+            <div class="palette-footer">
+                <span>↑↓ Navigate</span>
+                <span>↵ Select</span>
+                <span>ESC Close</span>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Notification -->
+    <div class="toast" id="toast"></div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
