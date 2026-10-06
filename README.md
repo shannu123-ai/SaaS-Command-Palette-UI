@@ -171,3 +171,74 @@ Users can usually open it using keyboard shortcuts such as:
 ```text
 Ctrl + K
 ⌘ + K
+📁 Project Structure
+SaaS-Command-Palette-UI/
+│
+├── ui-01-navigation-command-palette/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── ui-02-project-command-palette/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── ui-03-ai-command-palette/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── ui-04-team-workspace-command-palette/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+├── ui-05-settings-command-palette/
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+└── README.md
+🔀 GitHub Collaboration Workflow
+
+Our team followed the complete collaborative GitHub workflow:
+
+Repository Creation
+        ↓
+Add Collaborators
+        ↓
+Clone Repository
+        ↓
+Create Individual Branch
+        ↓
+Develop UI
+        ↓
+Test
+        ↓
+Check Changes
+        ↓
+Add Changes
+        ↓
+Commit
+        ↓
+Push Branch
+        ↓
+Create Pull Request
+        ↓
+Code Review
+        ↓
+Make Changes if Required
+        ↓
+Approval
+        ↓
+Merge
+        ↓
+Update Local Main
+        ↓
+Pull Latest Changes
