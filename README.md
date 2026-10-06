@@ -1,178 +1,133 @@
-# 🚀 SaaS Command Palette UI Collection
+# Modern SaaS UI Template Collection
 
-### UI Template Collection Hackathon | GitHub Team Collaboration
+A modern and responsive collection of reusable SaaS UI templates built using HTML, CSS and JavaScript.
 
-A collaborative collection of modern, responsive, and interactive **SaaS Command Palette UI templates** built using HTML, CSS, and JavaScript.
-
-This project demonstrates both **modern UI development** and a real-world **GitHub collaboration workflow** using branches, commits, pull requests, code reviews, and merges.
+This project was developed as part of the **UI Template Collection Hackathon – GitHub Team Collaboration**.
 
 ---
 
-# 👥 Team Information
+## 👥 Team
 
-## Team Name
+### Team Members
 
-### CodeCraft UI
+- Shanmukha Lakshmi
+- Mohitha
+- Vyshnavi
+- Geethika
+- Priyanka
 
-## Team Members
+### Team Category
 
-| No. | Team Member | UI Contribution |
-|---|---|---|
-| 1 | **Shannu** | Navigation & Quick Actions Command Palette |
-| 2 | **Mohitha** | Project Management Command Palette |
-| 3 | **Vyshu** | AI Command Palette |
-| 4 | **Geethu** | Team & Workspace Command Palette |
-| 5 | **Priya** | Settings & Quick Actions Command Palette |
-
-> Each team member is responsible for an individual UI contribution and participates in the GitHub collaboration and code review process.
+**Modern SaaS**
 
 ---
 
-# 🎯 Selected Project Topic
+## 📌 Project Overview
 
-## Modern SaaS → SaaS Command Palette
+The Modern SaaS UI Template Collection is a centralized collection of modern user interface templates commonly used in SaaS applications.
 
-Our team selected **SaaS Command Palette** as our main UI topic.
+The project provides a main dashboard where users can explore different SaaS interface patterns and open each template individually.
 
-A Command Palette is a search-driven interface that allows users to quickly find and execute commands, navigate through an application, and perform frequently used actions without manually navigating through multiple menus.
+Each template provides:
 
-Our goal is to explore different Command Palette experiences for modern SaaS applications and create a collection of original, responsive, and interactive UI templates.
+- Live preview
+- HTML source code
+- CSS source code
+- JavaScript source code
+- Interactive UI elements
+- Responsive design
 
----
-
-# 💡 Project Overview
-
-Modern SaaS applications contain many features, pages, tools, and settings.
-
-Traditional navigation can require users to open multiple menus and navigate through several levels.
-
-A Command Palette provides a faster alternative by allowing users to search for and execute actions from a single interface.
-
-Our collection explores Command Palettes for different SaaS workflows such as:
-
-- 🔍 Search
-- ⚡ Quick Actions
-- 🧭 Navigation
-- 📁 Project Management
-- ✓ Task Management
-- 👥 Team Management
-- 🤖 AI Actions
-- ⚙️ Settings
-- 📊 Analytics
-- ⌨️ Keyboard-driven workflows
+The collection is designed to demonstrate reusable, clean and modern SaaS interface patterns.
 
 ---
 
-# 🧩 UI Template Collection
+# 🎨 UI Templates
 
-## 01. Navigation & Quick Actions Command Palette
+The project contains all 16 Modern SaaS UI templates:
 
-### Developer: Shannu
-
-A general-purpose SaaS Command Palette focused on application navigation and frequently used actions.
-
-### Features
-
-- Dashboard navigation
-- Project navigation
-- Analytics navigation
-- Team navigation
-- Create project
-- Create task
-- Invite team member
-- Settings
-- Search commands
-- Keyboard shortcuts
-
----
-
-## 02. Project Management Command Palette
-
-### Developer: Mohitha
-
-A Command Palette designed specifically for project and task management workflows.
-
-### Features
-
-- Create new project
-- Open projects
-- Project analytics
-- Create tasks
-- View tasks
-- High-priority tasks
-- Assign team members
-- Search and filtering
-- Keyboard navigation
-- Quick project actions
+| No. | Template |
+|-----|----------|
+| 01 | SaaS Landing Page |
+| 02 | SaaS Dashboard |
+| 03 | SaaS Onboarding |
+| 04 | SaaS Login / Signup |
+| 05 | SaaS Pricing |
+| 06 | SaaS Billing |
+| 07 | SaaS Account Settings |
+| 08 | SaaS Team Management |
+| 09 | SaaS User Management |
+| 10 | SaaS Integrations |
+| 11 | SaaS Help Center |
+| 12 | SaaS Documentation |
+| 13 | SaaS Calendar |
+| 14 | SaaS File Management |
+| 15 | SaaS Collaboration Workspace |
+| 16 | SaaS Command Palette |
 
 ---
 
-## 03. AI Command Palette
+# 🔎 Research
 
-### Developer: Vyshu
+Modern SaaS applications require interfaces that are:
 
-A modern Command Palette focused on AI-assisted SaaS workflows.
+- Simple and easy to navigate
+- Responsive across different screen sizes
+- Consistent in visual design
+- Accessible and readable
+- Focused on user productivity
+- Reusable across different products
 
-### Features
+Common SaaS interface patterns include dashboards, authentication pages, pricing pages, billing systems, team management, file management, documentation and command palettes.
 
-- AI actions
-- AI-assisted commands
-- Prompt-based interactions
-- AI tools
-- Search
-- Quick actions
-- Keyboard shortcuts
-
----
-
-## 04. Team & Workspace Command Palette
-
-### Developer: Geethu
-
-A Command Palette focused on team collaboration and workspace management.
-
-### Features
-
-- Workspace navigation
-- Team management
-- Member actions
-- Collaboration tools
-- Team activity
-- Quick navigation
-- Workspace actions
+Our collection combines these common patterns into one centralized UI template platform.
 
 ---
 
-## 05. Settings & Quick Actions Command Palette
+# ✨ Key Features
 
-### Developer: Priya
-
-A Command Palette focused on application settings and frequently used workspace actions.
-
-### Features
-
-- Account settings
-- Workspace settings
-- Notifications
-- Theme controls
-- Quick actions
-- Keyboard shortcuts
+- Modern dark SaaS interface
+- Responsive layout
+- Centralized template collection
+- 16 different SaaS UI templates
+- Individual template preview pages
+- HTML code viewer
+- CSS code viewer
+- JavaScript code viewer
+- Copy-code functionality
+- Interactive buttons and controls
+- Search functionality
+- Command palette interaction
+- Team management interface
+- Calendar interface
+- File management interface
+- Collaboration workspace
+- Reusable styling components
 
 ---
 
-# 🔎 Topic Research
+# 🛠️ Technologies Used
 
-## What is a Command Palette?
+- HTML5
+- CSS3
+- JavaScript
+- Git
+- GitHub
+- Visual Studio Code
 
-A Command Palette is a search-based interface that allows users to discover and execute commands within an application.
+---
 
-Users can usually open it using keyboard shortcuts such as:
+# 📂 Project Structure
 
 ```text
-Ctrl + K
-⌘ + K
-📁 Project Structure
 SaaS-Command-Palette-UI/
+│
+├── index.html
+├── style.css
+├── script.js
+│
+├── template-viewer.html
+├── viewer.css
+├── viewer.js
 │
 ├── ui-01-navigation-command-palette/
 │   ├── index.html
@@ -186,59 +141,8 @@ SaaS-Command-Palette-UI/
 │   ├── script.js
 │   └── README.md
 │
-├── ui-03-ai-command-palette/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── README.md
-│
-├── ui-04-team-workspace-command-palette/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── README.md
-│
-├── ui-05-settings-command-palette/
-│   ├── index.html
-│   ├── style.css
-│   ├── script.js
-│   └── README.md
-│
-└── README.md
-🔀 GitHub Collaboration Workflow
-
-Our team followed the complete collaborative GitHub workflow:
-
-Repository Creation
-        ↓
-Add Collaborators
-        ↓
-Clone Repository
-        ↓
-Create Individual Branch
-        ↓
-Develop UI
-        ↓
-Test
-        ↓
-Check Changes
-        ↓
-Add Changes
-        ↓
-Commit
-        ↓
-Push Branch
-        ↓
-Create Pull Request
-        ↓
-Code Review
-        ↓
-Make Changes if Required
-        ↓
-Approval
-        ↓
-Merge
-        ↓
-Update Local Main
-        ↓
-Pull Latest Changes
+└── ui-04-team-workspace-command-palette/
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
