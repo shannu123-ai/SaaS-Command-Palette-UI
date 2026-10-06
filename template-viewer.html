@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Template Preview | Modern SaaS UI Collection</title>
+
+    <link rel="stylesheet" href="viewer.css">
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="viewer-header">
+
+        <div class="brand">
+            ✦ Modern SaaS
+        </div>
+
+        <div class="header-title">
+            Template Preview
+        </div>
+
+        <a href="index.html" class="back-btn">
+            ← Back to Collection
+        </a>
+
+    </header>
+
+
+    <!-- TEMPLATE DETAILS -->
+    <section class="template-info">
+
+        <span class="label">
+            SAAS UI TEMPLATE
+        </span>
+
+        <h1 id="templateTitle">
+            Loading Template...
+        </h1>
+
+        <p id="templateDescription">
+            Loading template information...
+        </p>
+
+    </section>
+
+
+    <!-- TABS -->
+    <nav class="code-tabs">
+
+        <button class="tab-btn active" data-tab="preview">
+            Preview
+        </button>
+
+        <button class="tab-btn" data-tab="html">
+            HTML
+        </button>
+
+        <button class="tab-btn" data-tab="css">
+            CSS
+        </button>
+
+        <button class="tab-btn" data-tab="js">
+            JavaScript
+        </button>
+
+    </nav>
+
+
+    <!-- MAIN CONTENT -->
+    <main class="viewer-content">
+
+
+        <!-- PREVIEW TAB -->
+        <section id="preview" class="tab-content active">
+
+            <div class="preview-container">
+
+                <iframe
+                    id="previewFrame"
+                    title="Template Preview">
+                </iframe>
+
+            </div>
+
+        </section>
+
+
+        <!-- HTML TAB -->
+        <section id="html" class="tab-content">
+
+            <div class="code-container">
+
+                <div class="code-header">
+                    <span>HTML</span>
+
+                    <button onclick="copyCode('htmlCode')">
+                        Copy
+                    </button>
+                </div>
+
+                <pre><code id="htmlCode">Loading HTML...</code></pre>
+
+            </div>
+
+        </section>
+
+
+        <!-- CSS TAB -->
+        <section id="css" class="tab-content">
+
+            <div class="code-container">
+
+                <div class="code-header">
+                    <span>CSS</span>
+
+                    <button onclick="copyCode('cssCode')">
+                        Copy
+                    </button>
+                </div>
+
+                <pre><code id="cssCode">Loading CSS...</code></pre>
+
+            </div>
+
+        </section>
+
+
+        <!-- JAVASCRIPT TAB -->
+        <section id="js" class="tab-content">
+
+            <div class="code-container">
+
+                <div class="code-header">
+                    <span>JavaScript</span>
+
+                    <button onclick="copyCode('jsCode')">
+                        Copy
+                    </button>
+                </div>
+
+                <pre><code id="jsCode">Loading JavaScript...</code></pre>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <script src="viewer.js"></script>
+
+</body>
+</html>
